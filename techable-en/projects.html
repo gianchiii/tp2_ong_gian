@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover TechAble's 3 main projects: Código sin Barreras, Mobile Tech Labs, and Inclusive Digital Mentorships.">
+    <title>What We Do | TechAble - Our Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/techable logo.png">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="linea"></div>
+                <h1>TECHABLE</h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html" class="active">What We Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Donate</a></li>
+            </ul>
+
+            <div class="idiomas">
+                <a href="../proyectos.html"><img src="https://flagcdn.com/w80/ar.png" data-lang="es" class="bandera" alt="Español" title="Español"></a>
+                <a href="projects.html"><img src="https://flagcdn.com/w80/gb.png" data-lang="en" class="bandera active" alt="English" title="English"></a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero projects-hero">
+        <div class="hero-content projects-hero-content">
+            <div class="hero-text">
+                <span class="hero-kicker">2025 programs</span>
+                <h1>What We Do</h1>
+                <p>Three programs that transform lives through accessible and inclusive technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section projects-intro">
+        <div class="projects-intro-content">
+            <p>
+                Our projects combine high-quality training, personalized support, and direct connection with the technological job market.
+            </p>
+            <div class="intro-highlights" aria-label="Work focus areas">
+                <span>Accessible training</span>
+                <span>Adapted technology</span>
+                <span>Real employability</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 PROJECTS -->
+    <section class="section projects-section">
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <picture>
+                    <source srcset="../imgs/1.jpg" type="image/jpeg">
+                    <img src="../imgs/1.jpg" width="800" height="532" loading="lazy" decoding="async" alt="Accessible programming workshop - Code Without Barriers">
+                </picture>
+                <div class="project-content">
+                    <h3>Code Without Barriers</h3>
+                    <div class="meta">Training • 2025 • +320 participants</div>
+                    <p>Intensive web development program for people with visual and motor disabilities. They learn HTML, CSS, JavaScript, and React using assistive technologies.</p>
+                    <button onclick="openModal('modal1')" class="btn btn-primary">Read full story</button>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <picture>
+                    <source srcset="../imgs/2.jpg" type="image/webp">
+                    <img src="../imgs/2.jpg" loading="lazy" decoding="async" alt="Mobile Tech Labs for inclusion">
+                </picture>
+                <div class="project-content">
+                    <h3>Mobile Tech Labs</h3>
+                    <div class="meta">Education • 2025 • 8 provinces reached</div>
+                    <p>We bring robotics, 3D printing, and programming to schools and community centers across the country, adapting workshops for different types of disabilities.</p>
+                    <button onclick="openModal('modal2')" class="btn btn-primary">Read full story</button>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <picture>
+                    <source srcset="../imgs/3.jpg" type="image/jpeg">
+                    <img src="../imgs/3.jpg" width="900" height="500" loading="lazy" decoding="async" alt="Inclusive Digital Mentorship Program">
+                </picture>
+                <div class="project-content">
+                    <h3>Inclusive Digital Mentorships</h3>
+                    <div class="meta">Employability • 2025 • 87% placement rate</div>
+                    <p>We connect people with disabilities who completed our training with senior professionals from tech companies for personalized mentorship and job search support.</p>
+                    <button onclick="openModal('modal3')" class="btn btn-primary">Read full story</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IMPACT NUMBERS -->
+    <section class="section impact-section">
+        <div class="section-title">
+            <h2>Our Impact in 2025</h2>
+        </div>
+        <div class="impact-grid">
+            <div class="impact-item">
+                <strong>850+</strong>
+                <p>People trained</p>
+            </div>
+            <div class="impact-item">
+                <strong>142</strong>
+                <p>People placed in jobs</p>
+            </div>
+            <div class="impact-item">
+                <strong>23</strong>
+                <p>Partner companies</p>
+            </div>
+            <div class="impact-item">
+                <strong>4.8/5</strong>
+                <p>Average satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="linea" style="background: linear-gradient(to bottom, #05BFDB, white);"></div>
+                    <h1 style="color: white;">TECHABLE</h1>
+                </a>
+                <p>Technology that empowers capabilities. Buenos Aires, Argentina.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Join Us</h4>
+                <ul>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Become a volunteer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechAble — Buenos Aires, Argentina.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/idiomas.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conocé los 3 proyectos principales de TechAble: Código sin Barreras, Laboratorios Tech Móviles y Mentorías Digitales Inclusivas.">
+    <title>¿Qué hacemos? | TechAble - Nuestros proyectos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/techable logo.png">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="linea"></div>
+                <h1>TECHABLE</h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="acerca-de.html" data-i18n="nav.acerca">Acerca de</a></li>
+                <li><a href="proyectos.html" class="active" data-i18n="nav.proyectos">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+                <li><a href="donacion.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;" data-i18n="nav.donar">Donar</a></li>
+            </ul>
+
+            <div class="idiomas">
+                <img src="https://flagcdn.com/w80/ar.png" data-lang="es" class="bandera active" alt="Español" title="Español">
+                <img src="https://flagcdn.com/w80/gb.png" data-lang="en" class="bandera" alt="English" title="English">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero projects-hero">
+        <div class="hero-content projects-hero-content">
+            <div class="hero-text">
+                <span class="hero-kicker">Programas 2025</span>
+                <h1 data-i18n="proyectos.hero.title">¿Qué hacemos?</h1>
+                <p data-i18n="proyectos.hero.subtitle">Tres programas que transforman vidas a través de la tecnología accesible e inclusiva.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section projects-intro">
+        <div class="projects-intro-content">
+            <p>
+                Nuestros proyectos combinan formación de alta calidad, acompañamiento personalizado y conexión directa con el mercado laboral tecnológico.
+            </p>
+            <div class="intro-highlights" aria-label="Ejes de trabajo">
+                <span>Formación accesible</span>
+                <span>Tecnología adaptada</span>
+                <span>Empleabilidad real</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 PROYECTOS EN FORMATO BLOG / CARDS -->
+    <section class="section projects-section">
+        <div class="projects-grid">
+
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <picture>
+                    <source srcset="imgs/1.jpg" type="image/jpeg">
+                    <img src="imgs/1.jpg" width="800" height="532" loading="lazy" decoding="async" alt="Taller de programación accesible Código sin Barreras">
+                </picture>
+                <div class="project-content">
+                    <h3>Código sin Barreras</h3>
+                    <div class="meta">Formación • 2025 • +320 participantes</div>
+                    <p>Programa intensivo de desarrollo web accesible para personas con discapacidad visual y motriz. Aprenden HTML, CSS, JavaScript y React usando tecnologías asistivas.</p>
+                    <button onclick="openModal('modal1')" class="btn btn-primary">Leer historia completa</button>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <picture>
+                    <source srcset="imgs/2.jpg" type="image/webp">
+                    <img src="imgs/2.jpg" loading="lazy" decoding="async" alt="Laboratorios Tech Móviles para inclusión">
+                </picture>
+                <div class="project-content">
+                    <h3>Laboratorios Tech Móviles</h3>
+                    <div class="meta">Educación • 2025 • 8 provincias alcanzadas</div>
+                    <p>Traemos robótica, impresión 3D y programación a escuelas y centros comunitarios de todo el país, adaptando los talleres para diferentes tipos de discapacidad.</p>
+                    <button onclick="openModal('modal2')" class="btn btn-primary">Leer historia completa</button>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <picture>
+                    <source srcset="imgs/3.jpg" type="image/jpeg">
+                    <img src="imgs/3.jpg" width="900" height="500" loading="lazy" decoding="async" alt="Programa de Mentorías Digitales Inclusivas">
+                </picture>
+                <div class="project-content">
+                    <h3>Mentorías Digitales Inclusivas</h3>
+                    <div class="meta">Empleabilidad • 2025 • 87% de colocación</div>
+                    <p>Conectamos a personas con discapacidad que finalizaron nuestra formación con profesionales senior de empresas tecnológicas para mentorías personalizadas y acompañamiento en la búsqueda laboral.</p>
+                    <button onclick="openModal('modal3')" class="btn btn-primary">Leer historia completa</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IMPACTO NÚMEROS -->
+    <section class="section impact-section">
+        <div class="section-title">
+            <h2>Nuestro impacto en 2025</h2>
+        </div>
+        <div class="impact-grid">
+            <div class="impact-item">
+                <strong>850+</strong>
+                <p>Personas formadas</p>
+            </div>
+            <div class="impact-item">
+                <strong>142</strong>
+                <p>Personas insertadas laboralmente</p>
+            </div>
+            <div class="impact-item">
+                <strong>23</strong>
+                <p>Empresas aliadas</p>
+            </div>
+            <div class="impact-item">
+                <strong>4.8/5</strong>
+                <p>Satisfacción promedio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALES CON CONTENIDO COMPLETO (formato blog) -->
+
+    <!-- Modal 1: Código sin Barreras -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close-modal" onclick="closeModal('modal1')" aria-label="Cerrar modal">&times;</button>
+                <span class="modal-eyebrow">Formación accesible</span>
+                <h2>Código sin Barreras</h2>
+                <p>Programa de formación en desarrollo web accesible • 2025</p>
+            </div>
+            <div class="modal-body">
+                <picture>
+                    <source srcset="imgs/1.jpg" type="image/jpeg">
+                    <img src="imgs/1.jpg" width="800" height="532" loading="lazy" decoding="async" alt="Participantes del programa Código sin Barreras">
+                </picture>
+                
+                <h3>¿De qué se trata?</h3>
+                <p>Un curso intensivo de 14 semanas donde personas con discapacidad visual y motriz aprenden a programar sitios y aplicaciones web 100% accesibles. Utilizamos herramientas como NVDA, JAWS, VoiceOver y teclados adaptados.</p>
+
+                <h3>Resultados 2025</h3>
+                <ul class="modal-list">
+                    <li><strong>324 personas</strong> completaron el programa</li>
+                    <li><strong>78%</strong> lograron su primera experiencia laboral en tech dentro de los 6 meses</li>
+                    <li>Creación de <strong>47 proyectos web accesibles</strong> presentados en demo day</li>
+                </ul>
+
+                <h3>Testimonio</h3>
+                <blockquote class="modal-quote">
+                    “Nunca pensé que podría trabajar como frontend developer. Gracias a Código sin Barreras hoy estoy en un equipo de una startup y gano mi primer sueldo en dólares.”<br>
+                    <strong>— Sofía R., 29 años, Córdoba</strong>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close-modal" onclick="closeModal('modal2')" aria-label="Cerrar modal">&times;</button>
+                <span class="modal-eyebrow">Tecnología itinerante</span>
+                <h2>Laboratorios Tech Móviles</h2>
+                <p>Educación tecnológica itinerante • 2025</p>
+            </div>
+            <div class="modal-body">
+                <picture>
+                    <source srcset="imgs/2.jpg" type="image/webp">
+                    <img src="imgs/2.jpg" loading="lazy" decoding="async" alt="Niños y jóvenes en Laboratorio Tech Móvil">
+                </picture>
+                
+                <h3>¿De qué se trata?</h3>
+                <p>Un camión especialmente adaptado recorre escuelas rurales, centros comunitarios y organizaciones de todo el país llevando kits de robótica, impresión 3D, programación con bloques y herramientas de accesibilidad.</p>
+
+                <h3>Impacto 2025</h3>
+                <ul class="modal-list">
+                    <li><strong>8 provincias</strong> visitadas</li>
+                    <li><strong>2.840 niños y jóvenes</strong> participaron de talleres</li>
+                    <li><strong>41% de participantes</strong> con algún tipo de discapacidad</li>
+                </ul>
+
+                <h3>Testimonio</h3>
+                <blockquote class="modal-quote">
+                    “Mi hijo nunca había podido usar una computadora. En el Laboratorio Tech Móvil pudo armar su primer robot con piezas adaptadas. Fue el día más feliz de su vida.”<br>
+                    <strong>— María G., mamá de Tomás, 11 años — Salta</strong>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close-modal" onclick="closeModal('modal3')" aria-label="Cerrar modal">&times;</button>
+                <span class="modal-eyebrow">Empleabilidad real</span>
+                <h2>Mentorías Digitales Inclusivas</h2>
+                <p>Programa de empleabilidad • 2025</p>
+            </div>
+            <div class="modal-body">
+                <picture>
+                    <source srcset="imgs/3.jpg" type="image/jpeg">
+                    <img src="imgs/3.jpg" width="900" height="500" loading="lazy" decoding="async" alt="Sesión de mentoría entre profesional tech y persona con discapacidad">
+                </picture>
+                
+                <h3>¿De qué se trata?</h3>
+                <p>Conectamos a egresados de nuestros programas con profesionales senior de empresas como Mercado Libre, Globant, Auth0 y startups locales para mentorías de 3 meses. Incluye preparación de LinkedIn, simulacros de entrevistas y revisión de portfolios.</p>
+
+                <h3>Resultados 2025</h3>
+                <ul class="modal-list">
+                    <li><strong>187 mentorías</strong> activas</li>
+                    <li><strong>87% tasa de colocación</strong> laboral</li>
+                    <li><strong>64 empresas</strong> contrataron a participantes del programa</li>
+                </ul>
+
+                <h3>Testimonio</h3>
+                <blockquote class="modal-quote">
+                    “La mentoría me dio confianza y herramientas concretas. Mi mentora me ayudó a preparar las entrevistas técnicas y hoy trabajo como QA Engineer en una fintech.”<br>
+                    <strong>— Diego P., 34 años — CABA</strong>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="linea" style="background: linear-gradient(to bottom, #05BFDB, white);"></div>
+                    <h1 style="color: white;">TECHABLE</h1>
+                </a>
+                <p>Tecnología que potencia capacidades. Buenos Aires, Argentina.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorá</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca-de.html">Acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Sumate</h4>
+                <ul>
+                    <li><a href="donacion.html">Donar</a></li>
+                    <li><a href="contacto.html">Ser voluntario</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechAble — Buenos Aires, Argentina.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/idiomas.js"></script>
+</body>
+</html>

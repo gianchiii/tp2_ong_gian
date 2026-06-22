@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donate to TechAble and help more people with disabilities access technological education and job opportunities.">
+    <title>Donate | TechAble - Your contribution transforms lives</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="linea"></div>
+                <h1>TECHABLE</h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">What We Do</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="donate.html" class="active btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Donate</a></li>
+            </ul>
+
+            <div class="idiomas">
+                <a href="../donacion.html"><img src="https://flagcdn.com/w80/ar.png" data-lang="es" class="bandera" alt="Español" title="Español"></a>
+                <a href="donate.html"><img src="https://flagcdn.com/w80/gb.png" data-lang="en" class="bandera active" alt="English" title="English"></a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero page-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Your donation<br>transforms realities</h1>
+                <p>Every contribution allows more people with disabilities to access quality technological training and find jobs in the tech sector.</p>
+            </div>
+            <picture class="hero-picture">
+                <source media="(max-width: 600px)" srcset="../imgs/3.jpg" type="image/jpeg">
+                <source srcset="../imgs/5.jpg" type="image/avif">
+                <img src="../imgs/5.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Person participating in an inclusive technology training session">
+            </picture>
+        </div>
+    </section>
+
+    <!-- QUICK IMPACT -->
+    <section class="section quick-impact">
+        <div class="section-inner">
+            <div class="quick-impact-grid">
+                <div class="quick-impact-item">
+                    <div class="quick-impact-number">$2,400</div>
+                    <p>covers one full month of training for one person</p>
+                </div>
+                <div class="quick-impact-item">
+                    <div class="quick-impact-number">$8,500</div>
+                    <p>funds an accessible robotics kit for a mobile lab</p>
+                </div>
+                <div class="quick-impact-item">
+                    <div class="quick-impact-number">100%</div>
+                    <p>of your donation goes directly to programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATION TIERS -->
+    <section class="section">
+        <div class="section-inner">
+            <h2 class="section-heading center">Choose how you want to contribute</h2>
+            
+            <div class="donation-tiers">
+                <div class="tier" data-amount="1500">
+                    <h4>Initial Support</h4>
+                    <div class="amount">$1,500</div>
+                    <p>One-time</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Helps one person start their training.</p>
+                </div>
+                <div class="tier selected" data-amount="5000">
+                    <h4>Medium Impact</h4>
+                    <div class="amount">$5,000</div>
+                    <p>One-time</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Covers almost half a month of full training.</p>
+                </div>
+                <div class="tier" data-amount="10000">
+                    <h4>Transformative</h4>
+                    <div class="amount">$10,000</div>
+                    <p>One-time</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Funds one full month of training for someone.</p>
+                </div>
+            </div>
+
+            <!-- Monthly subscription -->
+            <div class="monthly-donation">
+                <h3 style="margin-bottom: 1rem;">Or choose to contribute monthly (subscription)</h3>
+                <div class="donation-tiers">
+                    <div class="tier" data-amount="2500/month">
+                        <h4>Monthly Supporter</h4>
+                        <div class="amount">$2,500<span>/month</span></div>
+                        <p>Sustained support</p>
+                    </div>
+                    <div class="tier" data-amount="5000/month">
+                        <h4>Monthly Driver</h4>
+                        <div class="amount">$5,000<span>/month</span></div>
+                        <p>Continuous impact</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATION FORM -->
+    <section class="section" style="background: var(--white); padding-top: 2rem;">
+        <div class="section-inner-sm">
+            <h2 class="section-heading center">Complete your details to donate</h2>
+            
+            <form id="donationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombreDon">Full name</label>
+                        <input type="text" id="nombreDon" required placeholder="First and last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailDon">Email</label>
+                        <input type="email" id="emailDon" required placeholder="your@email.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="monto">Donation amount (in Argentine pesos)</label>
+                    <input type="number" id="monto" name="monto" value="5000" required min="1000" step="500">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoDonacion">Type of donation</label>
+                    <select id="tipoDonacion" required>
+                        <option value="unica">One-time donation</option>
+                        <option value="mensual">Monthly donation (subscription)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensajeDon">Would you like to leave us a message? (optional)</label>
+                    <textarea id="mensajeDon" placeholder="Dedication, comment, or how you heard about TechAble..."></textarea>
+                </div>
+
+                <div class="info-note">
+                    <strong>Important:</strong> This is a simulation of a donation for the practical work. 
+                    No real payment will be processed.
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width-submit">
+                    Confirm donation
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL / THANK YOU -->
+    <section class="section cta-section">
+        <div class="text-center-narrow">
+            <h2>Thank you for believing in inclusion</h2>
+            <p>
+                Your contribution allows us to continue breaking barriers. Together we are building a more diverse, inclusive, and human tech sector.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="linea" style="background: linear-gradient(to bottom, #05BFDB, white);"></div>
+                    <h1 style="color: white;">TECHABLE</h1>
+                </a>
+                <p>Technology that empowers capabilities. Buenos Aires, Argentina.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Join Us</h4>
+                <ul>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Become a volunteer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechAble — Buenos Aires, Argentina. Your donation is tax deductible.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/idiomas.js"></script>
+</body>
+</html>

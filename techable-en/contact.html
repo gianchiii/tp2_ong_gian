@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TechAble. Send us your inquiry, propose a partnership, or join as a volunteer.">
+    <title>Contact | TechAble</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/techable logo.png">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="linea"></div>
+                <h1>TECHABLE</h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="projects.html">What We Do</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="donate.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Donate</a></li>
+            </ul>
+
+            <div class="idiomas">
+                <a href="../contacto.html"><img src="https://flagcdn.com/w80/ar.png" data-lang="es" class="bandera" alt="Español" title="Español"></a>
+                <a href="contact.html"><img src="https://flagcdn.com/w80/gb.png" data-lang="en" class="bandera active" alt="English" title="English"></a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero page-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Let's Talk</h1>
+                <p>We're here to answer your questions, receive partnership proposals, or help you join as a volunteer.</p>
+            </div>
+            <picture class="hero-picture">
+                <source media="(max-width: 600px)" srcset="../imgs/4.jpg" type="image/jpeg">
+                <source srcset="../imgs/6.jpg" type="image/webp">
+                <img src="../imgs/6.jpg" loading="eager" decoding="async" fetchpriority="high" alt="TechAble team talking in an inclusive workspace">
+            </picture>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-inner two-column-layout">
+
+            <!-- FORM -->
+            <div>
+                <h2 class="section-heading">Send us a message</h2>
+                
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Full name</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo">Type of inquiry</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Select...</option>
+                            <option value="general">General inquiry</option>
+                            <option value="voluntario">I want to be a volunteer</option>
+                            <option value="empresa">I want to become a partner company</option>
+                            <option value="prensa">Press and communications</option>
+                            <option value="otro">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Message</label>
+                        <textarea id="mensaje" name="mensaje" required placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width-submit">Send message</button>
+                </form>
+            </div>
+
+            <!-- CONTACT INFO -->
+            <div>
+                <h2 class="section-heading">Contact Information</h2>
+                
+                <div class="card" style="margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem;">📍 Where we are</h3>
+                    <p><strong>Headquarters</strong><br>
+                    Av. Corrientes 3247, 8th Floor<br>
+                    CABA, Buenos Aires, Argentina</p>
+                    
+                    <p style="margin-top: 1rem;"><strong>Office hours</strong><br>
+                    Monday to Friday from 9:00 AM to 5:00 PM</p>
+                </div>
+
+                <div class="card">
+                    <h3 style="margin-bottom: 1rem;">📞 Direct Contact</h3>
+                    <p><strong>Phone / WhatsApp:</strong><br>
+                    +54 11 2345-6789</p>
+                    
+                    <p style="margin-top: 1rem;"><strong>Email:</strong><br>
+                    <a href="mailto:hola@techable.org.ar" style="color: var(--primary);">techable@gmail.com</a></p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="linea" style="background: linear-gradient(to bottom, #05BFDB, white);"></div>
+                    <h1 style="color: white;">TECHABLE</h1>
+                </a>
+                <p>Technology that empowers capabilities. Buenos Aires, Argentina.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Join Us</h4>
+                <ul>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Become a volunteer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechAble — Buenos Aires, Argentina.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/idiomas.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doná a TechAble y ayudá a que más personas con discapacidad accedan a educación tecnológica y oportunidades laborales.">
+    <title>Donar | TechAble - Tu aporte transforma vidas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="linea"></div>
+                <h1>TECHABLE</h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="acerca-de.html" data-i18n="nav.acerca">Acerca de</a></li>
+                <li><a href="proyectos.html" data-i18n="nav.proyectos">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+                <li><a href="donacion.html" class="active btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;" data-i18n="nav.donar">Donar</a></li>
+            </ul>
+
+            <div class="idiomas">
+                <img src="https://flagcdn.com/w80/ar.png" data-lang="es" class="bandera active" alt="Español" title="Español">
+                <img src="https://flagcdn.com/w80/gb.png" data-lang="en" class="bandera" alt="English" title="English">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO DONACIÓN -->
+    <section class="hero page-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-i18n="donar.hero.title">Tu donación<br>transforma realidades</h1>
+                <p data-i18n="donar.hero.subtitle">Cada aporte permite que más personas con discapacidad accedan a formación tecnológica de calidad y consigan trabajo en el sector tech.</p>
+            </div>
+            <picture class="hero-picture">
+                <source media="(max-width: 600px)" srcset="imgs/3.jpg" type="image/jpeg">
+                <source srcset="imgs/5.jpg" type="image/avif">
+                <img src="imgs/5.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Persona participando en una capacitación tecnológica inclusiva">
+            </picture>
+        </div>
+    </section>
+
+    <!-- IMPACTO RÁPIDO -->
+    <section class="section quick-impact">
+        <div class="section-inner">
+            <div class="quick-impact-grid">
+                <div class="quick-impact-item">
+                    <div class="quick-impact-number">$2.400</div>
+                    <p>cubre un mes completo de formación para una persona</p>
+                </div>
+                <div class="quick-impact-item">
+                    <div class="quick-impact-number">$8.500</div>
+                    <p>financia un kit de robótica accesible para un laboratorio móvil</p>
+                </div>
+                <div class="quick-impact-item">
+                    <div class="quick-impact-number">100%</div>
+                    <p>de tu donación llega directamente a los programas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIERS DE DONACIÓN -->
+    <section class="section">
+        <div class="section-inner">
+            <h2 class="section-heading center" data-i18n="donar.tiers.title">Elegí cómo querés aportar</h2>
+            
+            <div class="donation-tiers">
+                <div class="tier" data-amount="1500">
+                    <h4>Apoyo Inicial</h4>
+                    <div class="amount">$1.500</div>
+                    <p>Una vez</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Ayudás a una persona a comenzar su formación.</p>
+                </div>
+                <div class="tier selected" data-amount="5000">
+                    <h4>Impacto Medio</h4>
+                    <div class="amount">$5.000</div>
+                    <p>Una vez</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Cubrís casi la mitad de un mes de formación completa.</p>
+                </div>
+                <div class="tier" data-amount="10000">
+                    <h4>Transformador</h4>
+                    <div class="amount">$10.000</div>
+                    <p>Una vez</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">Financiás un mes completo de formación para alguien.</p>
+                </div>
+            </div>
+
+            <!-- Suscripción mensual -->
+            <div class="monthly-donation">
+                <h3 style="margin-bottom: 1rem;">O elegí aportar mensualmente (suscripción)</h3>
+                <div class="donation-tiers">
+                    <div class="tier" data-amount="2500/mes">
+                        <h4>Colaborador Mensual</h4>
+                        <div class="amount">$2.500<span>/mes</span></div>
+                        <p>Apoyo sostenido</p>
+                    </div>
+                    <div class="tier" data-amount="5000/mes">
+                        <h4>Impulsor Mensual</h4>
+                        <div class="amount">$5.000<span>/mes</span></div>
+                        <p>Impacto continuo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE DONACIÓN -->
+    <section class="section" style="background: var(--white); padding-top: 2rem;">
+        <div class="section-inner-sm">
+            <h2 class="section-heading center" data-i18n="donar.form.title">Completá tus datos para donar</h2>
+            
+            <form id="donationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombreDon">Nombre completo</label>
+                        <input type="text" id="nombreDon" required placeholder="Nombre y apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailDon">Email</label>
+                        <input type="email" id="emailDon" required placeholder="tu@email.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="monto">Monto a donar (en pesos argentinos)</label>
+                    <input type="number" id="monto" name="monto" value="5000" required min="1000" step="500">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoDonacion">Tipo de donación</label>
+                    <select id="tipoDonacion" required>
+                        <option value="unica">Donación única</option>
+                        <option value="mensual">Donación mensual (suscripción)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensajeDon">¿Querés dejarnos un mensaje? (opcional)</label>
+                    <textarea id="mensajeDon" placeholder="Dedicatoria, comentario o cómo te enteraste de TechAble..."></textarea>
+                </div>
+
+                <div class="info-note">
+                    <strong>Importante:</strong> Esta es una simulación de donación para el trabajo práctico. 
+                    No se procesará ningún pago real.
+                </div>
+
+                <button type="submit" class="btn btn-primary full-width-submit">
+                    Confirmar donación
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS / AGRADECIMIENTO -->
+    <section class="section cta-section">
+        <div class="text-center-narrow">
+            <h2>Gracias por creer en la inclusión</h2>
+            <p>
+                Tu aporte permite que sigamos rompiendo barreras. Juntos construimos un sector tecnológico más diverso, inclusivo y humano.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="linea" style="background: linear-gradient(to bottom, #05BFDB, white);"></div>
+                    <h1 style="color: white;">TECHABLE</h1>
+                </a>
+                <p>Tecnología que potencia capacidades. Buenos Aires, Argentina.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorá</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Sumate</h4>
+                <ul>
+                    <li><a href="donacion.html">Donar</a></li>
+                    <li><a href="contacto.html">Ser voluntario</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechAble — Buenos Aires, Argentina. Tu donación es deducible de impuestos.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/idiomas.js"></script>
+</body>
+</html>

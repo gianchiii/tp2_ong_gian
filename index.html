@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechAble - ONG que impulsa el talento tecnológico de personas con discapacidad en contextos vulnerables. Educación digital, inclusión laboral e innovación social.">
+    <title>TechAble | Inicio - Tecnología que rompe barreras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/techable logo.png">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="linea"></div>
+                <h1>TECHABLE</h1>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="acerca-de.html" data-i18n="nav.acerca">Acerca de</a></li>
+                <li><a href="proyectos.html" data-i18n="nav.proyectos">¿Qué Hacemos?</a></li>
+                <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+                <li><a href="donacion.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;" data-i18n="nav.donar">Donar</a></li>
+            </ul>
+
+            <div class="idiomas">
+                <img 
+                    src="https://flagcdn.com/w80/ar.png"
+                    data-lang="es"
+                    class="bandera active"
+                    alt="Español"
+                    title="Español"
+                >
+                <img 
+                    src="https://flagcdn.com/w80/gb.png"
+                    data-lang="en"
+                    class="bandera"
+                    alt="English"
+                    title="English"
+                >
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 data-i18n="home.hero.title">Donde la tecnología<br>rompe barreras.</h1>
+            <p data-i18n="home.hero.subtitle">Impulsamos el talento tecnológico de personas con discapacidad en contextos vulnerables mediante educación digital, inclusión laboral y herramientas innovadoras.</p>
+            <div class="hero-buttons">
+                <a href="proyectos.html" class="btn btn-primary" data-i18n="home.hero.btn1">Conocé nuestros proyectos</a>
+                <a href="donacion.html" class="btn btn-secondary" data-i18n="home.hero.btn2">Apoyá la causa</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <video 
+                src="imgs/video presentacion.mp4" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                style="width:100%; border-radius: var(--radius); box-shadow: var(--shadow-lg);">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+    </div>
+</section>
+
+    <!-- CAROUSEL CENTRAL - TechAble en acción (SLIDES) -->
+    <section class="carousel-section">
+        <div class="section-title">
+            <h2 data-i18n="home.carousel.title">TechAble en acción</h2>
+            <p data-i18n="home.carousel.subtitle">Historias reales de transformación a través de la tecnología inclusiva.</p>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-container">
+                <!-- Slide 1 -->
+                <div class="carousel-slide">
+                    <picture>
+                        <source srcset="imgs/1.jpg" type="image/jpeg">
+                        <img src="imgs/1.jpg" width="800" height="532" loading="lazy" decoding="async" alt="Taller de programación accesible para personas con discapacidad visual">
+                    </picture>
+                    <div class="slide-overlay">
+                        <h3 data-i18n="home.carousel.slide1.title">Programación Accesible</h3>
+                        <p data-i18n="home.carousel.slide1.text">Capacitaciones en desarrollo web con herramientas como NVDA, VoiceOver y lectores de pantalla.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide">
+                    <picture>
+                        <source srcset="imgs/2.jpg" type="image/webp">
+                        <img src="imgs/2.jpg" loading="lazy" decoding="async" alt="Laboratorio Tech inclusivo con jóvenes usando tecnología adaptada">
+                    </picture>
+                    <div class="slide-overlay">
+                        <h3 data-i18n="home.carousel.slide2.title">Laboratorios Tech</h3>
+                        <p data-i18n="home.carousel.slide2.text">Espacios de innovación donde la robótica y la programación se vuelven accesibles para todos.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <picture>
+                        <source srcset="imgs/3.jpg" type="image/jpeg">
+                        <img src="imgs/3.jpg" width="900" height="500" loading="lazy" decoding="async" alt="Participantes recibiendo becas digitales y formación tecnológica">
+                    </picture>
+                    <div class="slide-overlay">
+                        <h3 data-i18n="home.carousel.slide3.title">Becas Digitales</h3>
+                        <p data-i18n="home.carousel.slide3.text">Acceso gratuito a formación de alta calidad para personas en contextos vulnerables.</p>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-slide">
+                    <picture>
+                        <source srcset="imgs/4.jpg" type="image/jpeg">
+                        <img src="imgs/4.jpg" width="1300" height="731" loading="lazy" decoding="async" alt="Voluntarios tech brindando mentorías y acompañamiento digital">
+                    </picture>
+                    <div class="slide-overlay">
+                        <h3 data-i18n="home.carousel.slide4.title">Voluntariado Tech</h3>
+                        <p data-i18n="home.carousel.slide4.text">Mentorías personalizadas que conectan talento con oportunidades laborales reales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" aria-label="Anterior">←</button>
+                <button class="carousel-btn next" aria-label="Siguiente">→</button>
+            </div>
+        </div>
+
+        <div class="carousel-dots"></div>
+    </section>
+
+    <!-- IMPACT STATS (Mejorado) -->
+    <section class="section" style="background: #f8f8f8; padding: 3rem 2rem;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+                <div>
+                    <div class="stat-number" data-target="850">0</div>
+                    <p style="margin-top: 0.5rem; font-weight: 600; color: #333;">Personas formadas</p>
+                </div>
+                <div>
+                    <div class="stat-number" data-target="142">0</div>
+                    <p style="margin-top: 0.5rem; font-weight: 600; color: #333;">Personas insertadas laboralmente</p>
+                </div>
+                <div>
+                    <div class="stat-number" data-target="23">0</div>
+                    <p style="margin-top: 0.5rem; font-weight: 600; color: #333;">Empresas aliadas</p>
+                </div>
+                <div>
+                    <div class="stat-number" data-target="48">0</div>
+                    <p style="margin-top: 0.5rem; font-weight: 600; color: #333;">Satisfacción promedio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMPACTO / CARDS -->
+    <section class="section">
+        <div class="section-title">
+            <h2>Impulsamos el talento a través de la tecnología</h2>
+            <p>Creemos que la tecnología debe ser una herramienta de inclusión, no de exclusión.</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <h3 data-i18n="home.card1.title">Educación Digital</h3>
+                <p data-i18n="home.card1.text">Brindamos acceso a cursos y capacitaciones tecnológicas adaptadas para personas con discapacidad en contextos vulnerables.</p>
+                <a href="proyectos.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Ver programas</a>
+            </div>
+            <div class="card">
+                <h3 data-i18n="home.card2.title">Inclusión Laboral</h3>
+                <p data-i18n="home.card2.text">Creamos oportunidades reales de inserción laboral en el mundo digital y tecnológico a través de mentorías y alianzas.</p>
+                <a href="proyectos.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Conocé cómo</a>
+            </div>
+            <div class="card">
+                <h3 data-i18n="home.card3.title">Innovación Social</h3>
+                <p data-i18n="home.card3.text">Utilizamos herramientas digitales modernas para romper barreras y potenciar capacidades de manera sostenible.</p>
+                <a href="acerca-de.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;">Nuestra misión</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA DONACIÓN -->
+    <section class="section" style="background: var(--primary); color: white; text-align: center; padding: 4rem 2rem;">
+        <div style="max-width: 720px; margin: 0 auto;">
+            <h2 style="color: white; margin-bottom: 1rem;" data-i18n="home.cta.title">Tu apoyo cambia realidades</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.15rem; margin-bottom: 2rem;" data-i18n="home.cta.text">
+                Cada donación permite que más personas con discapacidad accedan a formación tecnológica de calidad y oportunidades laborales.
+            </p>
+            <a href="donacion.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;" data-i18n="home.cta.btn">Hacé tu donación ahora</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="linea" style="background: linear-gradient(to bottom, #05BFDB, white);"></div>
+                    <h1 style="color: white;">TECHABLE</h1>
+                </a>
+                <p data-i18n="footer.brand">Tecnología que potencia capacidades. Buenos Aires, Argentina.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-i18n="footer.explore">Explorá</h4>
+                <ul>
+                    <li><a href="acerca-de.html" data-i18n="footer.link.about">Acerca de nosotros</a></li>
+                    <li><a href="proyectos.html" data-i18n="footer.link.projects">Nuestros proyectos</a></li>
+                    <li><a href="contacto.html" data-i18n="footer.link.contact">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4 data-i18n="footer.join">Sumate</h4>
+                <ul>
+                    <li><a href="donacion.html" data-i18n="footer.link.donate">Hacé una donación</a></li>
+                    <li><a href="contacto.html" data-i18n="footer.link.volunteer">Ser voluntario</a></li>
+                    <li><a href="contacto.html" data-i18n="footer.link.companies">Empresas aliadas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">© 2026 TechAble — Buenos Aires, Argentina. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/idiomas.js"></script>
+</body>
+</html>

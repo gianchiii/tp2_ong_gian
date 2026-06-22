@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactate con TechAble. Envianos tu consulta, proponé una alianza o sumate como voluntario.">
+    <title>Contacto | TechAble</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/techable logo.png">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="linea"></div>
+                <h1>TECHABLE</h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="acerca-de.html" data-i18n="nav.acerca">Acerca de</a></li>
+                <li><a href="proyectos.html" data-i18n="nav.proyectos">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html" class="active" data-i18n="nav.contacto">Contacto</a></li>
+                <li><a href="donacion.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;" data-i18n="nav.donar">Donar</a></li>
+            </ul>
+
+            <div class="idiomas">
+                <img src="https://flagcdn.com/w80/ar.png" data-lang="es" class="bandera active" alt="Español" title="Español">
+                <img src="https://flagcdn.com/w80/gb.png" data-lang="en" class="bandera" alt="English" title="English">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero page-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hablemos</h1>
+                <p>Estamos para responder tus consultas, recibir propuestas de alianza o ayudarte a sumarte como voluntario.</p>
+            </div>
+            <picture class="hero-picture">
+                <source media="(max-width: 600px)" srcset="imgs/4.jpg" type="image/jpeg">
+                <source srcset="imgs/6.jpg" type="image/webp">
+                <img src="imgs/6.jpg" loading="eager" decoding="async" fetchpriority="high" alt="Equipo de TechAble conversando en un espacio de trabajo inclusivo">
+            </picture>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-inner two-column-layout">
+
+            <!-- FORMULARIO -->
+            <div>
+                <h2 class="section-heading">Envianos un mensaje</h2>
+                
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipo">Tipo de consulta</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Seleccionar...</option>
+                            <option value="general">Consulta general</option>
+                            <option value="voluntario">Quiero ser voluntario/a</option>
+                            <option value="empresa">Quiero ser empresa aliada</option>
+                            <option value="prensa">Prensa y comunicación</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required placeholder="Contanos cómo podemos ayudarte..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width-submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <!-- INFO DE CONTACTO -->
+            <div>
+                <h2 class="section-heading">Información de contacto</h2>
+                
+                <div class="card" style="margin-bottom: 1.5rem;">
+                    <h3 style="margin-bottom: 1rem;">📍 Dónde estamos</h3>
+                    <p><strong>Oficina central</strong><br>
+                    Av. Corrientes 3247, Piso 8<br>
+                    CABA, Buenos Aires, Argentina</p>
+                    
+                    <p style="margin-top: 1rem;"><strong>Horario de atención</strong><br>
+                    Lunes a viernes de 9:00 a 17:00 hs</p>
+                </div>
+
+                <div class="card">
+                    <h3 style="margin-bottom: 1rem;">📞 Contacto directo</h3>
+                    <p><strong>Teléfono / WhatsApp:</strong><br>
+                    +54 11 2345-6789</p>
+                    
+                    <p style="margin-top: 1rem;"><strong>Email:</strong><br>
+                    <a href="mailto:hola@techable.org.ar" style="color: var(--primary);">techable@gmail.com</a></p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="linea" style="background: linear-gradient(to bottom, #05BFDB, white);"></div>
+                    <h1 style="color: white;">TECHABLE</h1>
+                </a>
+                <p>Tecnología que potencia capacidades. Buenos Aires, Argentina.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorá</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca-de.html">Acerca de</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Sumate</h4>
+                <ul>
+                    <li><a href="donacion.html">Donar</a></li>
+                    <li><a href="contacto.html">Ser voluntario</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechAble — Buenos Aires, Argentina.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/idiomas.js"></script>
+</body>
+</html>

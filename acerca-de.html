@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conocé la misión, visión y equipo de TechAble, la ONG que trabaja por la inclusión tecnológica de personas con discapacidad en Argentina.">
+    <title>Acerca de | TechAble - Tecnología inclusiva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/techable logo.png">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="linea"></div>
+                <h1>TECHABLE</h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" data-i18n="nav.inicio">Inicio</a></li>
+                <li><a href="acerca-de.html" class="active" data-i18n="nav.acerca">Acerca de</a></li>
+                <li><a href="proyectos.html" data-i18n="nav.proyectos">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html" data-i18n="nav.contacto">Contacto</a></li>
+                <li><a href="donacion.html" class="btn btn-primary" style="padding: 0.6rem 1.4rem; font-size: 0.9rem;" data-i18n="nav.donar">Donar</a></li>
+            </ul>
+
+            <div class="idiomas">
+                <img src="https://flagcdn.com/w80/ar.png" data-lang="es" class="bandera active" alt="Español" title="Español">
+                <img src="https://flagcdn.com/w80/gb.png" data-lang="en" class="bandera" alt="English" title="English">
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SIMPLE -->
+    <section class="hero page-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-i18n="about.hero.title">Acerca de TechAble</h1>
+                <p data-i18n="about.hero.subtitle">Nacimos para demostrar que la tecnología puede (y debe) ser una fuerza de inclusión y equidad.</p>
+            </div>
+            <picture class="hero-picture">
+                <source media="(max-width: 600px)" srcset="imgs/presentacion techable.jpg" type="image/jpeg">
+                <source srcset="imgs/presentacion techable.jpg" type="image/jpeg">
+                <img src="imgs/presentacion techable.jpg" width="1024" height="768" loading="eager" decoding="async" fetchpriority="high" alt="Presentación de TechAble sobre tecnología inclusiva">
+            </picture>
+        </div>
+    </section>
+
+    <!-- MISIÓN Y VISIÓN -->
+    <section class="section">
+        <div class="cards-grid section-inner">
+            <div class="card">
+                <h3 data-i18n="about.mision.title">Nuestra Misión</h3>
+                <p data-i18n="about.mision.text">Brindar herramientas digitales, educación inclusiva y oportunidades reales a personas con discapacidad en contextos vulnerables, para que puedan desarrollar su talento tecnológico y acceder al mundo laboral digital.</p>
+            </div>
+            <div class="card">
+                <h3 data-i18n="about.vision.title">Nuestra Visión</h3>
+                <p data-i18n="about.vision.text">Un futuro donde la discapacidad no sea una barrera para el desarrollo profesional en tecnología. Donde cada persona tenga las mismas oportunidades de aprender, crear e innovar sin importar sus capacidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTRA HISTORIA -->
+    <section class="section" style="background: var(--white);">
+        <div class="text-center-narrow">
+            <h2>Nuestra Historia</h2>
+            <p>
+                TechAble nació en 2022 en Buenos Aires de la mano de un grupo de profesionales de tecnología, educadores y activistas por los derechos de las personas con discapacidad. 
+                Luego de años de trabajo voluntario en distintas organizaciones, detectamos una gran brecha: mientras el sector tech crecía exponencialmente, las personas con discapacidad quedaban sistemáticamente excluidas de las oportunidades laborales y formativas.
+            </p>
+            <p>
+                Hoy, gracias al apoyo de aliados, voluntarios y donantes, hemos impactado directamente en más de 850 personas a través de nuestros programas de formación, mentorías y colocación laboral.
+            </p>
+        </div>
+    </section>
+
+    <!-- VALORES -->
+    <section class="section">
+        <div class="section-title">
+            <h2>Lo que nos mueve</h2>
+        </div>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>🌍 Inclusión Real</h3>
+                <p>No adaptamos a las personas a la tecnología. Adaptamos la tecnología y los procesos para que todas las personas puedan participar plenamente.</p>
+            </div>
+            <div class="card">
+                <h3>🤝 Colaboración</h3>
+                <p>Trabajamos junto a empresas, universidades, organizaciones de la sociedad civil y, sobre todo, junto a las personas con discapacidad que son protagonistas de su propio desarrollo.</p>
+            </div>
+            <div class="card">
+                <h3>💡 Innovación con Propósito</h3>
+                <p>Usamos las mejores herramientas tecnológicas disponibles, pero siempre al servicio de las personas y no al revés.</p>
+            </div>
+            <div class="card">
+                <h3>📈 Impacto Medible</h3>
+                <p>Cada programa tiene indicadores claros de resultado. Medimos empleabilidad, retención laboral y satisfacción de los participantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO (ficticio pero realista) -->
+    <section class="section" style="background: var(--white);">
+        <div class="section-title">
+            <h2>Equipo Fundador</h2>
+            <p>Profesionales apasionados por la tecnología y la inclusión.</p>
+        </div>
+
+        <div class="cards-grid section-inner">
+            <div class="card" style="text-align: center;">
+                <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #0A4D68, #05BFDB); border-radius: 9999px; margin: 0 auto 1.25rem;"></div>
+                <h3>Laura Benítez</h3>
+                <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Directora Ejecutiva & Co-fundadora</p>
+                <p style="font-size: 0.95rem;">Ex-Google, especialista en accesibilidad digital. Madre de un niño con discapacidad visual.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #088395, #0A4D68); border-radius: 9999px; margin: 0 auto 1.25rem;"></div>
+                <h3>Matías Rodríguez</h3>
+                <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Director de Programas</p>
+                <p style="font-size: 0.95rem;">Ingeniero en Sistemas. 12 años liderando proyectos de inclusión digital en América Latina.</p>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #05BFDB, #088395); border-radius: 9999px; margin: 0 auto 1.25rem;"></div>
+                <h3>Camila Torres</h3>
+                <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">Coordinadora de Voluntariado</p>
+                <p style="font-size: 0.95rem;">Psicóloga social. Especialista en diversidad e inclusión organizacional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <div class="linea" style="background: linear-gradient(to bottom, #05BFDB, white);"></div>
+                    <h1 style="color: white;">TECHABLE</h1>
+                </a>
+                <p>Tecnología que potencia capacidades. Buenos Aires, Argentina.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explorá</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Sumate</h4>
+                <ul>
+                    <li><a href="donacion.html">Donar</a></li>
+                    <li><a href="contacto.html">Ser voluntario</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TechAble — Buenos Aires, Argentina.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/idiomas.js"></script>
+</body>
+</html>
